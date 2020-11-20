@@ -1,0 +1,870 @@
+/***LAVINDE COPENHAGEN KODE***/
+
+/**fonte**/
+
+
+
+<style > @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@font-face {
+	font-family: 'helvetica';
+	src: url('font/HelveticaNeue-Light.woff2') format('woff2'), url('font/HelveticaNeue-Light.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'ganton';
+	src: url('font/ganton.woff2') format('woff2'), url('font/ganton.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+h1,
+h2,
+h3,
+h4,
+ul {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-weight: 300 !important;
+}
+
+.display-2, .display-3, .display-4 {
+	font-weight: 300;
+	color: #333333;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+}
+
+p {
+	font-family: 'helvetica', sans-serif;
+	font-size: 16px;
+}
+
+h1 {
+	font-size: 100px;
+}
+
+h2 {
+	font-size: 40px
+}
+
+h3 {
+	font-size: 25px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+ul,
+a {
+	font-size: 12px !important;
+}
+
+#tilmeld-nyhedsbrev .display-4,
+#tilmeld-nyhedsbrev h4,
+#carusel .display-4,
+#morgenrutine h4 {
+	text-shadow: 0px 0px 25px #333333;
+	color: white;
+	font-weight: 400 !important;
+	margin-top: 50px;
+}
+
+#splash .display-4 {
+	color: white;
+}
+
+
+/***links***/
+
+a,
+ul {
+	text-decoration: none;
+	hyphens: auto;
+}
+
+a:hover,
+ul:hover {
+	color: white;
+}
+
+/***baggrundsfarver***/
+
+.container_fluid {
+	background-color: white;
+}
+
+.nav {
+	background-color: transparent !important;
+}
+
+header {
+	background-color: transparent;
+}
+
+footer {
+	background-color: #E2D7C6;
+}
+
+#splash,
+#pool {
+	background-color: white;
+	overflow: hidden;
+}
+
+/***knapper***/
+
+.button,
+.btn {
+	background: #E2D7C6;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+	transition: all 0.2s ease;
+	cursor: pointer;
+	border: none;
+	margin: auto;
+}
+
+#morgenrutine .btn {
+	width: 250px;
+	margin-top: 100px;
+
+}
+
+#before-and-after .btn {
+	width: 150px;
+}
+
+.button:focus,
+.button:active,
+.button:focus-within {
+	outline: 0;
+}
+
+.button:hover,
+.btn:hover {
+	background-color: #E2D7C6;
+	color: white !important;
+	text-decoration: none;
+	transform: scale(1.2);
+}
+
+/**splash header **/
+
+.splash-foto {
+	background-image: url(fotos/splash3.jpg);
+	background-size: cover;
+	width: 100vw;
+	height: 900px;
+	background-position: center;
+	overflow: hidden;
+}
+
+.splash-text {
+	margin: 350px 50px 50px 140px;
+	color: white;
+	text-shadow: 0px 0px 20px rgba(51, 51, 51, 0.51);
+}
+
+.overskrift {
+	font-family: 'ganton'
+}
+
+/***splash***/
+#splash {
+	margin: 0px;
+}
+
+#splash img {
+	max-height: 650px;
+	max-width: 650px;
+	margin-top: 27vh;
+}
+
+#splash video {
+	z-index: -1;
+	overflow: hidden;
+	transform: translate(-63%, 0%);
+}
+
+/***pil ned på splash***/
+
+#splash_arrow {
+	background-image: url(fotos/hvid_pil.svg);
+	width: 45px;
+	height: 25px;
+	background-size: 100%;
+	position: absolute;
+	z-index: 1;
+	top: 855px;
+	left: 47%;
+}
+
+
+/***body***/
+
+body {
+	overflow-x: hidden;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+
+/***Nyhedsbrev sign up**/
+
+
+#mc_embed_signup .button {
+	color: black !important;
+	background-color: #E2D7C6 !important;
+	border-radius: 0px !important;
+}
+
+.nyhedsbrev_foto {
+	background-image: url(fotos/wave3.jpg);
+	background-size: cover;
+	width: 100vw;
+	height: 400px;
+	position: relative;
+	background-position: center;
+	overflow: hidden;
+	background-attachment: fixed;
+}
+
+/*certified */
+.certified-foto {
+	background-image: url(fotos/hav.jpg);
+	background-size: cover;
+	width: 100vw;
+	height: 400px;
+	position: relative;
+	background-position: center;
+	overflow: hidden;
+	background-attachment: fixed;
+}
+
+/***Carusel***/
+
+#carousel img {
+	max-height: 600px;
+
+}
+
+/*****menu****/
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+}
+
+.bg-custom-1 {
+	background-color: transparent !important;
+}
+
+.bg-custom-2 {
+	background-color: transparent !important;
+}
+
+/**hover effect**/
+
+nav img {
+	width: 60px;
+	height: auto;
+}
+
+.navbar-light,
+.navbar-nav,
+.nav-link {
+	color: black !important;
+	font-size: 12px;
+}
+
+.nav-link {
+	margin: 0px 10px;
+}
+
+.active {
+	text-decoration: none;
+	background-color: gray;
+	border-radius: 5px;
+	pointer-events: none;
+}
+
+.navbar-toggler-icon {
+	color: black;
+}
+
+
+/***STEP 1-3****/
+
+
+#step_1-3 img {
+	width: 100%;
+}
+
+.card {
+	border: white;
+}
+
+.card .btn {
+	width: 150px;
+	margin: auto;
+	color: black;
+	background-color: #E2D7C6;
+	border: none;
+}
+
+/****historien-bag-lavinde***/
+
+#historien-bag-lavinde{
+/*	background-color: #E2D7C6; */
+	background-image: url(fotos/spire-baggrund.jpg);
+	background-size: cover;
+	width: 100%;
+	background-position: center;
+	overflow: hidden;
+
+}
+
+
+/**before and after**/
+
+
+#before-and-after {
+/*	background-color: #E2D7C6; */
+	background-image: url(fotos/renew-eyeserum-uden-prop.jpg);
+	background-size: cover;
+	width: 100%;
+	background-position: center;
+	overflow: hidden;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.img-comp-container {
+	position: relative;
+	height: 400px;
+	/*should be the same height as the images*/
+}
+
+.img-comp-img {
+	position: absolute;
+	width: auto;
+	height: auto;
+	overflow: hidden;
+}
+
+.img-comp-img img {
+	display: block;
+	vertical-align: middle;
+}
+
+/**slideshows button***/
+
+.img-comp-slider {
+	position: absolute;
+	z-index: 9;
+	cursor: ew-resize;
+	/*set the appearance of the slider:*/
+	width: 40px;
+	height: 40px;
+	background-color: skyblue;
+	opacity: 0.7;
+	border-radius: 50%;
+}
+
+
+/**ingredienser***/
+
+.emballage {
+	background-image: url(fotos/Renew.jpg);
+	background-size: cover;
+	width: 600px;
+	height: 600px;
+	position: relative;
+	background-position: center;
+	overflow: hidden;
+}
+
+/***testimonials***/
+
+#testimonials .card-text {
+	margin-top: -80px;
+}
+
+#testimonials img {
+	width: 100%;
+}
+
+#testimonials p {
+	color: #585858;
+	font-style: italic;
+}
+
+
+
+
+
+/**bestsellers***/
+
+#bestsellers img {
+	width: 100%;
+}
+
+#bestsellers h3 {
+	font-size: 18px;
+}
+
+
+/***3 BOXES***/
+
+.text {
+	background-color: #E2D7C6;
+	margin-top: 80px;
+}
+
+.text h3 {
+	margin: auto;
+	font-family: 'ganton';
+	color: white;
+}
+
+.pic1 {
+	margin-right: -50px;
+	margin-left: 50px;
+}
+
+.pic3 {
+	margin-left: -50px;
+	margin-top: 50px;
+	background-color: transparent;
+}
+
+.pic1 img,
+.pic3 img,
+.text {
+	width: 25vw;
+	height: 25vw;
+}
+
+
+
+/****video****/
+
+#video-section .textbox {
+	margin-right: -50px;
+	background-color: #E2D7C6;
+}
+
+/***morgenrutine***/
+
+.morgenrutine_foto {
+	background-image: url(fotos/morgenrutine.jpg);
+	background-size: cover;
+	width: 100%;
+	position: relative;
+	background-position: center;
+	overflow: hidden;
+}
+
+/*
+*/
+
+
+
+
+
+
+/***instagram***/
+
+
+#instagram img:hover {
+	opacity: 0.3;
+}
+
+
+.instagram_profile {
+	visibility: hidden;
+}
+
+/***footer***/
+
+footer {
+	color: white;
+	padding: 0px 10px;
+}
+
+footer .some {
+	display: flex;
+	justify-content: space-around;
+}
+
+footer a {
+	font-size: 12px;
+	color: white;
+	text-decoration: none;
+	hyphens: auto;
+	font-family: 'Fashion', sans-serif;
+}
+
+footer a:hover {
+	color: gray !important;
+	text-decoration: none;
+}
+
+
+footer img {
+	width: 30px;
+	height: auto;
+}
+
+footer img:hover {
+	transform: scale(1.1);
+}
+
+
+
+
+
+
+/****animationer****/
+
+/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 0.4s;
+	animation-name: fade;
+	animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: 1
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+.fade-in {
+	animation: come-in 0.8s ease-in;
+}
+
+.fade-in:nth-child(odd) {
+	animation-duration: 1s;
+}
+
+.already-visible {
+	animation: none;
+}
+
+@keyframes come-in {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+/* pulse animation */
+
+.pulse {
+	animation-name: pulse_kf;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-direction: alternate-reverse;
+}
+
+@keyframes pulse_kf {
+	0% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(1.9);
+	}
+}
+
+/* pulse animation til køb-knap youth */
+
+.pulse_knap {
+	animation-name: pulse_kf;
+	animation-duration: 2s;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-direction: alternate-reverse;
+}
+
+@keyframes pulse_kf {
+	0% {
+		transform: scale(0.95);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+/* zoom animation */
+
+.zoom {
+	animation-name: zoom_kf;
+	animation-duration: 0.8s;
+	animation-fill-mode: both;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-direction: alternate;
+}
+
+@keyframes zoom_kf {
+	0% {
+		transform: scale(0.95);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+/* animationer til ingredienser og 7 grunde til acai */
+
+.fly_right {
+	animation: fly_right 0.8s ease-in;
+}
+
+.fly_right:nth-child(odd) {
+	animation-duration: 1s;
+}
+
+.already-visible {
+	animation: none;
+}
+
+@keyframes fly_right {
+	0% {
+		right: -1000px;
+	}
+
+	100% {
+		right: 0px;
+	}
+}
+
+
+.fly_left {
+	animation: fly_left 0.8s ease-in;
+}
+
+.fly_left:nth-child(odd) {
+	animation-duration: 1s;
+}
+
+.already-visible {
+	animation: none;
+}
+
+@keyframes fly_left {
+	0% {
+		left: -1000px;
+	}
+
+	100% {
+		left: 0px;
+	}
+}
+
+
+/* animation til gif */
+
+.static {
+	position: absolute;
+	background: white;
+}
+
+.static:hover {
+	opacity: 0;
+}
+
+/*
+#step_1-3 img:hover {
+ opacity: 70%;
+}
+*/
+
+
+/***preloader***/
+
+.preloader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background-image: url('videoer/spinner.gif');
+	background-repeat: no-repeat;
+	background-color: #2B2C2E;
+	background-position: center;
+}
+
+
+
+
+/****privacy policy****/
+
+#privacy_policy {
+	background-color: #E2D7C6;
+	color: black;
+	overflow: hidden;
+	margin: 0px;
+}
+
+#privacy_policy #text {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+#privacy_policy h1,
+h2,
+h3 {
+	padding: 10px;
+}
+
+#privacy_policy h1 {
+	font-size: 30px;
+}
+
+#privacy_policy h2 {
+	font-size: 23px;
+}
+
+#privacy_policy h3 {
+	font-size: 17px;
+}
+
+#privacy_policy p {
+	padding: 10px 10px 20px 10px;
+}
+
+#privacy_policy .titel {
+	margin-top: 100px;
+}
+
+
+
+
+/***media q***/
+
+@media (max-width: 670px) {
+
+	#splash img {
+		margin-top: 130px;
+	}
+
+}
+
+
+@media (min-width: 670px) {
+	#splash img {
+		margin-top: 9vh;
+	}
+
+
+}
+
+@media (max-width:767.98px) {
+	.emballage {
+		background-image: url(fotos/Youth-emballage.jpg);
+		background-size: cover;
+		max-width: 450px;
+		height: auto;
+		position: relative;
+		background-position: center;
+	}
+
+	.emballage h4 {
+		font-size: 14px;
+		margin-left: 0px !important;
+		margin-right: 0px !important;
+	}
+
+	h2 {
+		font-size: 30px !important;
+	}
+}
+
+@media (min-width:991.98px) {
+
+	.nyhedsbrev_foto,
+	.morgenrutine_foto {
+		height: 500px;
+	}
+
+}
+
+@media (max-width:768px) {
+
+
+
+	.text {
+		background-color: #E2D7C6;
+		margin-top: 0px;
+		width: 100%;
+	}
+
+	.pic1 {
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+
+	.pic3 {
+		margin-left: 0px;
+		margin-top: 0px;
+		background-color: transparent;
+	}
+
+	.pic1 img,
+	.pic3 img,
+	.text {
+		width: 100%;
+		height: auto;
+	}
+
+}
+
+
+
+
+
+
+/***ACAI KODE***/
+
+
+/*
+
+**skygge på fotografier - produkt uden baggrund***
+
+#splash img, .mySlides img {
+  width: 150px;
+  -webkit-filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.51));
+  filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.51));
+}
+
+*/
