@@ -21,8 +21,8 @@
         'display_igtv': false,
         'callback': null,
         'styling': true,
-        'items': 8,
-        'items_per_row': 4,
+        'items': 9,
+        'items_per_row': 3,
         'margin': 0.5,
         'image_size': 640,
         'lazy_load': false
