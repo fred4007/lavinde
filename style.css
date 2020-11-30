@@ -30,8 +30,8 @@ ul {
 	font-weight: 300 !important;
 }
 
-.display-1 {
-	font-family: 'ganton';
+.overskrift, .display-1 {
+	font-family: 'ganton'!important;
 }
 
 .display-2,
