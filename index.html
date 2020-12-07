@@ -14,7 +14,6 @@
 	<link rel="stylesheet" href="bs/css/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
 
-
 	<!--   Emojies
 				&#x1F331; (plante)
 				&#x1F49B; (guld hjerte)
@@ -96,11 +95,12 @@
 					<div class="display-1 overskrift text-right col-xl-12 col-lg-12 col-md-12 col-sm-12" data-aos="fade-left" data-aos-delay="600">FINE LINJER </div>
 					<div class="display-4 brandnavn text-center col-xl-12 col-lg-12 col-md-12 col-sm-12 my-3" data-aos="zoom-in" data-aos-delay="700">RENEW EYE SERUM</div>
 					<p class="intro text-center col-xl-12 col-lg-12 col-md-12 col-sm-12 my-3" data-aos="zoom-in" data-aos-delay="800">Certified Allergy Friendly Cosmetics</p>
-					<a href="#ingredienser" class="btn btn-primary rounded-0 shadow" data-aos="zoom-in" data-aos-delay="900">LÆS MERE</a>
+					<div class="d-flex justify-content-center">
+  <a href="#ingredienser"><button class="btn btn-primary rounded-0 shadow m-auto" data-aos="zoom-in" data-aos-delay="900">LÆS MERE</button></a></div>
 				</div>
 			</div>
 
-			<a href="index.html#ingredienser">
+			<a href="#ingredienser">
 				<div id="splash_arrow" class="pulse"></div>
 			</a>
 		</section>
@@ -227,7 +227,6 @@
 		</section>
 
 
-
 		<section id="carousel" class="container_fluid shadow">
 			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 				<ol class="carousel-indicators">
@@ -237,27 +236,27 @@
 				</ol>
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img class="d-block w-100" src="fotos/morgenrutine.jpg" alt="Hvordan er din morgenrutine">
+						<img src="fotos/morgenrutine.jpg" class="d-block w-100" alt="Deltag i vores event i Magasin">
 						<div class="carousel-caption d-none d-md-block" data-aos="zoom-in">
 							<div class="display-4 mb-5">HVORDAN SER DIN MORGENRUTINE UD?</div>
 							<h4 class="mb-5">Del din rutine med os på Instagram</h4>
-							<a href="https://www.instagram.com/renewlavinde" class="btn btn-primary rounded-0 p-3 shadow mb-5">GÅ TIL INSTAGRAM</a>
+							<a class="btn btn-primary rounded-0 p-3 mb-5 shadow" href="https://www.instagram.com/renewlavinde" role="button">GÅ TIL INSTAGRAM</a>
 						</div>
 					</div>
 					<div class="carousel-item event">
-						<img class="d-block w-100" src="fotos/event-magasin.jpg" alt="Deltag i vores event i Magasin">
+						<img src="fotos/event-magasin.jpg" class="d-block w-100" alt="Deltag i vores event i Magasin">
 						<div class="carousel-caption d-none d-md-block" data-aos="zoom-in">
 							<div class="display-4 mb-5">DELTAG I VORES EVENT</div>
 							<h4 class="mb-5">Magasin d. 05-10-20 og få rådgivning</h4>
-							<a href="https://www.facebook.com" class="btn btn-primary rounded-0 p-3 mb-5 shadow">DELTAG HER</a>
+							<a href="https://facebook.com" class="btn btn-primary rounded-0 shadow m-auto">DELTAG HER</a>
 						</div>
 					</div>
 					<div class="carousel-item">
-						<img class="d-block w-100" src="fotos/forhandler.jpg" alt="Find din forhandler">
+						<img src="fotos/forhandler.jpg" class="d-block w-100" alt="Find din forhandler">
 						<div class="carousel-caption d-none d-md-block" data-aos="zoom-in">
 							<div class="display-4 mb-5">FIND DIN FORHANDLER</div>
 							<h4 class="mb-5">Lavinde Copenhagen forhandles blandt andet i Magasin, Matas, Nicehair</h4>
-							<a href="https://lavinde.com/forhandler" class="btn btn-primary rounded-0 p-3 mb-5 shadow">FIND FORHANDLER</a>
+							<a href="https://lavinde.com/forhandler" class="btn btn-primary rounded-0 shadow m-auto">FIND DIN FORHANDLER</a>
 						</div>
 					</div>
 				</div>
@@ -407,7 +406,7 @@
 		<section id="insta" class="col-12 container m-auto text-center" data-aos="fade-up">
 			<div class="display-4">FIND OS PÅ INSTAGRAM</div>
 			<p class="mt-5">Tag @lavindecph og del din Lavinde Copenhagen-oplevelse med os og dine nærmeste på Instagram.</p>
-			<div class="posts py-5 row">
+			<div class="posts container py-5 m-auto row">
 				<div class="post col-4"><a href="https://www.instagram.com/p/CIGJSkNAvTN/?utm_source=ig_web_copy_link"><img src="fotos/step1.jpg" class="shadow"></a></div>
 				<div class="post col-4"><a href="https://www.instagram.com/p/CIGJQP8gZtf/?utm_source=ig_web_copy_link"><img src="fotos/hav.jpg" class="shadow"></a></div>
 				<div class="post col-4"><a href="https://www.instagram.com/p/CIGJVJrANnc/?utm_source=ig_web_copy_link"><img src="fotos/testimonial.jpg" class="shadow"></a></div>
@@ -449,11 +448,12 @@
 		})
 	</script>
 
-	<script async src="//www.instagram.com/embed.js"></script>
+<!--	<script async src="//www.instagram.com/embed.js"></script>-->
+
+
+	<!--	Javascript Instagram-->
 
 	<!--
-	Javascript Instagram
-
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script src="jquery.instagramFeed.js"></script>
 
@@ -482,6 +482,7 @@
 -->
 
 
+
 	<!--    min egen js   -->
 	<script src="scripts.js"></script>
 
@@ -490,7 +491,7 @@
 	<script src="bs/js/jquery.slim.js"></script>
 
 
-	<!--    Bootstrap script version 4.5-->
+	<!--    Bootstrap script version 5.0-->
 	<script src="bs/js/bootstrap.min.js"></script>
 
 
@@ -507,7 +508,28 @@
 	</script>
 
 
+<!--Bootstrap Javascript link -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
 
+<script>
+
+	//Menu skifter transparent til farve ved scroll
+
+$(document).ready(function(){
+  $(window).scroll(function(){
+  	var scroll = $(window).scrollTop();
+	  if (scroll > 900) {
+	    $("header").css("background" , "rgba(226, 215, 198, 0.73)");
+	  }
+
+	  else{
+		  $("header").css("background" , "transparent");
+	  }
+  })
+})
+
+	</script>
 
 </body></html>

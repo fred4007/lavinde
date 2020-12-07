@@ -91,18 +91,4 @@ initComparisons();
 
 
 
-//Menu skifter transparent til farve ved scroll
-
-$(document).ready(function(){
-  $(window).scroll(function(){
-  	var scroll = $(window).scrollTop();
-	  if (scroll > 900) {
-	    $(".navbar").css("background" , "rgba(226, 215, 198, 0.73)");
-	  }
-
-	  else{
-		  $(".navbar").css("background" , "transparent");
-	  }
-  });
-});
 
