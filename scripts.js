@@ -1,4 +1,6 @@
+
 /*** before and after**/
+
 
 function initComparisons() {
     var x, i;
@@ -53,9 +55,9 @@ function initComparisons() {
         function slideMove(e) {
             var pos;
             /*if the slider is no longer clicked, exit this function:*/
-            if (clicked == 0) return false;
+            if (clicked === 0) return false;
             /*get the cursor's x position:*/
-            pos = getCursorPos(e)
+            pos = getCursorPos(e);
             /*prevent the slider from being positioned outside the image:*/
             if (pos < 0) pos = 0;
             if (pos > w) pos = w;
@@ -89,109 +91,18 @@ initComparisons();
 
 
 
-function Utils() {}
-        Utils.prototype = {
-            constructor: Utils,
-            isElementInView: function (element, fullyInView) {
-                var pageTop = $(window).scrollTop();
-                var pageBottom = pageTop + $(window).height();
-                var elementTop = $(element).offset().top;
-                var elementBottom = elementTop + $(element).height();
+//Menu skifter transparent til farve ved scroll
 
-                if (fullyInView === true) {
-                    return ((pageTop < elementTop) && (pageBottom > elementBottom));
-                } else {
-                    return ((elementTop <= pageBottom) && (elementBottom >= pageTop));
-                }
-            }
-        };
+$(document).ready(function(){
+  $(window).scroll(function(){
+  	var scroll = $(window).scrollTop();
+	  if (scroll > 900) {
+	    $(".navbar").css("background" , "rgba(226, 215, 198, 0.73)");
+	  }
 
-        var Utils = new Utils();
-        $(window).on('load', addFadeIn());
-
-        $(window).scroll(function() {
-            addFadeIn(true);
-        });
-
-function addFadeIn(repeat) {
-            var classToFadeIn = "p, h1, h2, h3, h4, img, .btn";
-
-            $(classToFadeIn).each(function( index ) {
-                var isElementInView = Utils.isElementInView($(this), false);
-                if (isElementInView) {
-                    if(!($(this).hasClass('fade-in')) && !($(this).hasClass('fade-in'))) {
-                        if(index % 2 == 0) $(this).addClass('fade-in');
-                        else $(this).addClass('fade-in');
-                    }
-                } else if(repeat) {
-                    $(this).removeClass('fade-in');
-                }
-            });
-        }
-
-
-
-/****scroll effekt med animationer på fotos og tekst****/
-//
-//(function($) {
-//
-//  $.fn.visible = function(partial) {
-//
-//      var $t            = $(this),
-//          $w            = $(window),
-//          viewTop       = $w.scrollTop(),
-//          viewBottom    = viewTop + $w.height(),
-//          _top          = $t.offset().top,
-//          _bottom       = _top + $t.height(),
-//          compareTop    = partial === true ? _bottom : _top,
-//          compareBottom = partial === true ? _top : _bottom;
-//
-//    return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
-//
-//  };
-//
-//})(jQuery);
-//
-//
-//
-//
-//var win = $(window);
-//
-//var allMods = $("h1, h2, h3, h4, p, img");
-//
-//
-//allMods.each(function(i, el) {
-//  var el = $(el);
-//  if (el.visible(true)) {
-//    el.addClass("already-visible");
-//  }
-//});
-//
-//win.scroll(function(event) {
-//
-//  allMods.each(function(i, el) {
-//    var el = $(el);
-//    if (el.visible(true)) {
-//      el.addClass("fade-in");
-//    }
-//  });
-//
-//});
-
-/***menu***/
-
-/**Kollaps menu ved klik**/
-//
-//$('.nav-link, .nav-bar-brand').click(function() {
-//    var navbar_toggle = $('.navbar-toggler');
-//    if (navbar_toggle.is(':visible')) {
-//        navbar_toggle.trigger('click');
-//    }
-//});
-//
-
-//window.addEventListener('scroll', function() {
-//  document.getElementById('showScroll').innerHTML = window.pageYOffset + 'px';
-//});
-
+	  else{
+		  $(".navbar").css("background" , "transparent");
+	  }
+  });
+});
 

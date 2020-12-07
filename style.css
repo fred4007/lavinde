@@ -9,7 +9,6 @@
 	src: url('font/HelveticaNeue-Light.woff2') format('woff2'), url('font/HelveticaNeue-Light.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
-	font-display: swap;
 }
 
 @font-face {
@@ -17,7 +16,6 @@
 	src: url('font/Ganton.woff2') format('woff2'), url('font/Ganton.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
-	font-display: swap;
 }
 
 h1,
@@ -30,8 +28,9 @@ ul {
 	font-weight: 300 !important;
 }
 
-.overskrift, .display-1 {
-	font-family: 'Ganton'!important;
+.overskrift,
+.display-1 {
+	font-family: 'Ganton' !important;
 }
 
 .display-2,
@@ -39,7 +38,7 @@ ul {
 .display-4 {
 	font-weight: 200;
 	color: #333333;
-	font-family: 'Montserrat'sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
 }
 
@@ -72,10 +71,16 @@ a {
 #tilmeld-nyhedsbrev .display-4,
 #tilmeld-nyhedsbrev h4,
 #carousel .display-4,
-#morgenrutine h4 {
-	text-shadow: 0px 0px 25px #333333;
+#carousel h4 {
+	text-shadow: 0px 0px 20px rgba(51, 51, 51, 0.91);
 	color: white;
-	font-weight: 400 !important;
+	font-weight: 300;
+}
+
+#carousel h4,
+#tilmeld-nyhedsbrev h4 {
+	font-weight: 900;
+
 }
 
 
@@ -130,7 +135,10 @@ footer {
 	margin-bottom: 50px;
 }
 
-
+.logo {
+	height: 100px;
+	width: auto;
+}
 
 
 /***knapper***/
@@ -149,8 +157,12 @@ footer {
 	border: none;
 	vertical-align: middle;
 	text-align: center;
+	z-index: 100;
 }
 
+a {
+	z-index: 100;
+}
 
 .button:focus,
 .button:active,
@@ -163,13 +175,62 @@ footer {
 	background-color: #E2D7C6;
 	color: white !important;
 	text-decoration: none;
+}
+
+a:hover,
+.btn:hover,
+.button:hover {
 	transform: scale(1.2);
 }
+
+/*****menu****/
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+}
+
+nav a {
+		font-weight: 900;
+	font-family: 'Montserrat', sans-serif
+}
+
+nav img {
+	width: 150px;
+	height: auto;
+	margin-left: 20px;
+}
+
+.navbar-light,
+.navbar-nav,
+.nav-link {
+	color: white !important;
+	font-size: 12px;
+}
+
+.nav-link {
+	margin: 0px 10px;
+}
+
+.active {
+	text-decoration: none;
+	background-color: gray;
+	border-radius: 5px;
+	pointer-events: none;
+}
+
+.navbar-toggler-icon {
+	color: white;
+}
+
+
+
 
 /**splash header **/
 
 .splash-foto {
-	background-image: url(fotos/splash.jpg);
+	background-image: url(fotos/splash3.jpg);
 	background-size: cover;
 	width: 100vw;
 	height: 900px;
@@ -182,9 +243,9 @@ footer {
 }
 
 .splash-text {
-	margin: 350px 150px 100px 150px;
+	margin: 350px 35vw 0vw 20vw;
 	color: white;
-	text-shadow: 0px 0px 20px rgba(51, 51, 51, 0.51);
+	text-shadow: 0px 0px 20px rgba(51, 51, 51, 0.71);
 }
 
 #splash {
@@ -227,6 +288,23 @@ html {
 }
 
 
+/*hav*/
+
+#hav {
+	display: block;
+}
+
+#havvideo {
+	height: 500px;
+	width: 100%;
+
+}
+
+#hav .video {
+object-fit: cover;
+  object-position: 100% 20%;
+}
+
 /***Nyhedsbrev sign up**/
 
 
@@ -257,56 +335,12 @@ html {
 	background-position: center;
 	overflow: hidden;
 	background-attachment: fixed;
-	padding-top: 50px;
 }
 
 .certified-foto img {
-	height: 250px;
-	width: 250px;
-}
-
-
-
-
-/*****menu****/
-header {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 999;
-}
-
-.bg-custom-2 {
-	background-color: transparent;
-}
-
-
-nav img {
-	width: 150px;
-	height: auto;
-	margin-left: 20px;
-}
-
-.navbar-light,
-.navbar-nav,
-.nav-link {
-	color: white !important;
-	font-size: 12px;
-}
-
-.nav-link {
-	margin: 0px 10px;
-}
-
-.active {
-	text-decoration: none;
-	background-color: gray;
-	border-radius: 5px;
-	pointer-events: none;
-}
-
-.navbar-toggler-icon {
-	color: white;
+	height: 230px;
+	padding: 20px;
+	width: auto;
 }
 
 
@@ -322,12 +356,16 @@ nav img {
 	border: white;
 }
 
+.step {
+	font-family: 'ganton';
+	color: #E2D7C6;
+}
+
 
 
 /****historien-bag-lavinde***/
 
 #historien-bag-lavinde {
-	/*	background-color: #E2D7C6; */
 	background-image: url(fotos/spire-baggrund-2.jpg);
 	background-size: cover;
 	width: 100%;
@@ -349,6 +387,10 @@ nav img {
 	height: 700px;
 	background-position: center;
 	overflow: hidden;
+}
+
+#before-and-after h2 {
+		color: #333333;
 }
 
 * {
@@ -373,6 +415,11 @@ nav img {
 	vertical-align: middle;
 }
 
+#before-and-after .btn {
+	color: #333333;
+	background-color: rgba(255, 255, 255, 0.76);
+}
+
 /**slideshows button***/
 
 .img-comp-slider {
@@ -387,14 +434,19 @@ nav img {
 	border-radius: 50%;
 }
 
+.img-comp-slider:hover {
+	transform: scale(1.3);
+
+}
+
 
 /**ingredienser***/
 
 .emballage {
-	background-image: url(fotos/Renew.jpg);
+	background-image: url(fotos/renew2.jpg);
 	background-size: cover;
-	width: 600px;
-	height: 600px;
+	width: 650px;
+	height: 650px;
 	position: relative;
 	background-position: center;
 	overflow: hidden;
@@ -472,7 +524,11 @@ video,
 
 iframe {
 	width: 100%;
-	height: 400px;
+	height: 351px;
+}
+
+video::-webkit-media-controls {
+	display: none !important;
 }
 
 /***morgenrutine***/
@@ -485,9 +541,6 @@ iframe {
 	background-position: center;
 	overflow: hidden;
 }
-
-/*
-*/
 
 
 
@@ -502,9 +555,16 @@ iframe {
 }
 
 
-.instagram_profile {
-	visibility: hidden;
+#insta img {
+	width: 100%;
+	height: auto;
+	margin: 10px 0px;
 }
+
+#insta img:hover {
+		opacity: 0.3;
+}
+
 
 /***footer***/
 
@@ -546,72 +606,10 @@ footer img:hover {
 
 
 
-/****animationer****/
 
-/* Fading animation */
-.fade {
-	-webkit-animation-name: fade;
-	-webkit-animation-duration: 0.4s;
-	animation-name: fade;
-	animation-duration: 3s;
-}
-
-@-webkit-keyframes fade {
-	from {
-		opacity: 1
-	}
-
-	to {
-		opacity: 1
-	}
-}
-
-.fade-in {
-	animation: come-in 0.8s ease-in;
-}
-
-.fade-in:nth-child(odd) {
-	animation-duration: 1s;
-}
-
-.already-visible {
-	animation: none;
-}
-
-@keyframes come-in {
-	from {
-		opacity: 0;
-	}
-
-	to {
-		opacity: 1;
-	}
-}
-
-/* pulse animation */
+/* pulse animation til køb-knap renew */
 
 .pulse {
-	animation-name: pulse_kf;
-	animation-duration: 1s;
-	animation-fill-mode: both;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-	animation-direction: alternate-reverse;
-}
-
-@keyframes pulse_kf {
-	0% {
-		transform: scale(1);
-	}
-
-	100% {
-		transform: scale(1.9);
-	}
-}
-
-/* pulse animation til køb-knap youth */
-
-.pulse_knap {
 	animation-name: pulse_kf;
 	animation-duration: 2s;
 	animation-fill-mode: both;
@@ -622,99 +620,26 @@ footer img:hover {
 
 @keyframes pulse_kf {
 	0% {
-		transform: scale(0.95);
+		transform: scale(0.85);
 	}
 
 	100% {
-		transform: scale(1);
+		transform: scale(1.2);
 	}
 }
 
-/* zoom animation */
-
-.zoom {
-	animation-name: zoom_kf;
-	animation-duration: 0.8s;
-	animation-fill-mode: both;
-	animation-iteration-count: 1;
-	animation-timing-function: linear;
-	animation-direction: alternate;
-}
-
-@keyframes zoom_kf {
-	0% {
-		transform: scale(0.95);
-	}
-
-	100% {
-		transform: scale(1);
-	}
-}
-
-/* animationer til ingredienser og 7 grunde til acai */
-
-.fly_right {
-	animation: fly_right 0.8s ease-in;
-}
-
-.fly_right:nth-child(odd) {
-	animation-duration: 1s;
-}
-
-.already-visible {
-	animation: none;
-}
-
-@keyframes fly_right {
-	0% {
-		right: -1000px;
-	}
-
-	100% {
-		right: 0px;
-	}
-}
-
-
-.fly_left {
-	animation: fly_left 0.8s ease-in;
-}
-
-.fly_left:nth-child(odd) {
-	animation-duration: 1s;
-}
-
-.already-visible {
-	animation: none;
-}
-
-@keyframes fly_left {
-	0% {
-		left: -1000px;
-	}
-
-	100% {
-		left: 0px;
-	}
-}
-
-
-/* animation til gif */
+/*Animation hover effekt på produktfotos under bestsellers*/
 
 .static {
-	position: absolute;
-	background: white;
+  position:absolute;
+  background: white;
 }
 
 .static:hover {
-	opacity: 0;
+  opacity:0;
 }
 
-/*
-#step_1-3 img:hover {
- opacity: 70%;
-}
-*/
+
 
 
 /***preloader***/
@@ -782,45 +707,84 @@ h3 {
 
 
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-	...
-}
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-
-
-	.navbar {
-		background-color: #e2d7c6;
+@media (max-width:1300px) {
+	.splash-text {
+		margin-left: 20vw;
+		margin-right: 20vw;
 	}
 
-	.nav-link {
-		color: black !important;
+	.carousel-item {
+		height: 400px;
+
 	}
-}
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-
-	.nyhedsbrev_foto,
-	.morgenrutine_foto {
-		height: 500px;
+	.carousel-item img {
+object-fit: cover;
+  object-position: 30% 0%;
+		width: 300px;
+  height: 400px;
 	}
+
+.event img {
+object-fit: cover;
+  object-position: 80% 0%;
+	}
+
+
+
+.nyhedsbrev_foto, .certified-foto {
+
+	background-size: cover;
+	width: 100vw;
+	height: 400px;
+	background-position: center;
+	overflow: hidden;
+	background-attachment: inherit;
+	}
+
+
+		#step_1-3 .card,
+	#testimonials .card {
+		margin-bottom: -50px !important;
+	}
+
+	#bestsellers .card {
+		margin-top: 50px;
+	}
+
+
+	.certified-foto img {
+	height: auto;
+	padding: 20px;
+	width: 150px;
 }
 
-// X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-	...
-}
 
-// XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) {
-	...
 }
 
 
 
+
+/*ipad og under*/
+
+@media (max-width:835px) {
+	#splash .btn {
+		margin-left: 20vw;
+		margin-top: 50px;
+	}
+
+	#splash_arrow {
+		top: 850px;
+	}
+
+#before-and-after {
+		height: 1000px;
+			background-position: 200vw;
+
+	}
+
+
+	}
 
 
 @media (max-width:767.98px) {
@@ -841,6 +805,10 @@ h3 {
 
 	h2 {
 		font-size: 30px !important;
+	}
+
+	.display-4 {
+		font-size: 25px;
 	}
 
 	.text {
@@ -879,21 +847,66 @@ h3 {
 		width: 100%;
 		padding: 0px;
 	}
+
+	.splash-foto {
+		height: 650px;
+	}
+
+	.splash-text {
+		text-shadow: 0px 0px 20px rgba(51, 51, 51, 0.91);
+		margin: 120px
+	}
+
+
+
+	#splash_arrow {
+		top: 610px !important;
+	}
+
+
 }
 
 
-/*
 
-**skygge på fotografier - produkt uden baggrund***
+/*Alt under iphone 6/7/8 plus*/
 
-#historien-bag-lavinde {
-  width: 150px;
-  -webkit-filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.51));
-  filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.51));
+@media (max-width:600px) {
+
+	#splash .btn {
+		margin-left: 25vw;
+	}
+
+	#havvideo {
+	height: 300px;
 }
-*/
 
+	.emballage {
+		width: 350px;
+		height: 350px;
+		position: relative;
+	}
 
+	#ingredienser h4 {
+		font-size: 12px;
 
+	}
+
+	.splash-text {
+		margin-top: 290px;
+		margin-left: 10vw;
+		margin-right: 10vw;
+	}
+
+	#historien-bag-lavinde {
+			height: 1200px;
+			background-position: 235vw;
+		}
+
+	#before-and-after {
+		height: 1100px;
+			background-position: 275vw;
+
+	}
+}
 
 
