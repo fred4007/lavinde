@@ -9,6 +9,7 @@
 	src: url('font/HelveticaNeue-Light.woff2') format('woff2'), url('font/HelveticaNeue-Light.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -16,6 +17,7 @@
 	src: url('font/Ganton.woff2') format('woff2'), url('font/Ganton.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 }
 
 h1,
@@ -83,6 +85,25 @@ a {
 }
 
 
+header img,
+#splash img,
+#ingredienser img,
+#historien-bag-lavinde img,
+#step_1-3 img,
+#bestsellers img,
+#carousel img,
+#3-boxes img,
+#before-and-after img,
+#testimonials img,
+#certified img,
+#video-section img,
+#tilmeld-nyhedsbrev img,
+#insta img,
+footer img {
+	width: 100%;
+	height: auto;
+}
+
 /***links***/
 
 a,
@@ -97,7 +118,7 @@ ul:hover {
 }
 
 header a:hover {
-	color: gray!important;
+	color: gray !important;
 
 }
 
@@ -151,8 +172,8 @@ footer {
 	cursor: pointer;
 	margin: auto;
 	padding: 15px 40px;
-	background-color: #E2D7C6!important;
-	border: none!important;
+	background-color: #E2D7C6 !important;
+	border: none !important;
 	vertical-align: middle;
 	text-align: center;
 	z-index: 100;
@@ -211,6 +232,7 @@ nav img {
 
 
 
+
 /**splash header **/
 
 .splash-foto {
@@ -234,12 +256,6 @@ nav img {
 
 #splash {
 	margin: 0px;
-}
-
-#splash img {
-	max-height: 650px;
-	max-width: 650px;
-	margin-top: 27vh;
 }
 
 #splash .btn {
@@ -285,8 +301,8 @@ html {
 }
 
 #hav .video {
-object-fit: cover;
-  object-position: 100% 20%;
+	object-fit: cover;
+	object-position: 100% 20%;
 }
 
 /***Nyhedsbrev sign up**/
@@ -313,7 +329,7 @@ object-fit: cover;
 .certified-foto {
 	background-image: url(fotos/hav.jpg);
 	background-size: cover;
-	width: 100vw;
+	width: 100%;
 	height: 400px;
 	position: relative;
 	background-position: center;
@@ -337,7 +353,7 @@ object-fit: cover;
 }
 
 .card {
-	border: white!important;
+	border: white !important;
 }
 
 .step {
@@ -374,7 +390,7 @@ object-fit: cover;
 }
 
 #before-and-after h2 {
-		color: #333333;
+	color: #333333;
 }
 
 * {
@@ -401,7 +417,7 @@ object-fit: cover;
 
 #before-and-after .btn {
 	color: #333333;
-	background-color: rgba(255, 255, 255, 0.76);
+	background-color: rgba(255, 255, 255, 0.76) !important;
 }
 
 /**slideshows button***/
@@ -549,7 +565,7 @@ video::-webkit-media-controls {
 }
 
 #insta img:hover {
-		opacity: 0.3;
+	opacity: 0.3;
 }
 
 
@@ -618,18 +634,19 @@ footer img:hover {
 /*Animation hover effekt på produktfotos under bestsellers*/
 
 .static {
-  position:absolute;
-  background: white;
+	position: absolute;
+	background: white;
 }
 
 .static:hover {
-  opacity:0;
+	opacity: 0;
 }
 
 
 
+/*
 
-/***preloader***/
+**preloader**
 
 .preloader {
 	position: absolute;
@@ -644,6 +661,7 @@ footer img:hover {
 	background-position: center;
 }
 
+*/
 
 
 
@@ -706,31 +724,32 @@ h3 {
 	}
 
 	.carousel-item img {
-object-fit: cover;
-  object-position: 30% 0%;
+		object-fit: cover;
+		object-position: 30% 0%;
 		width: 300px;
-  height: 400px;
+		height: 400px;
 	}
 
-.event img {
-object-fit: cover;
-  object-position: 80% 0%;
-	}
-
-
-
-.nyhedsbrev_foto, .certified-foto {
-
-	background-size: cover;
-	width: 100vw;
-	height: 400px;
-	background-position: center;
-	overflow: hidden;
-	background-attachment: inherit;
+	.event img {
+		object-fit: cover;
+		object-position: 80% 0%;
 	}
 
 
-		#step_1-3 .card,
+
+	.nyhedsbrev_foto,
+	.certified-foto {
+
+		background-size: cover;
+		width: 100vw;
+		height: 400px;
+		background-position: center;
+		overflow: hidden;
+		background-attachment: inherit;
+	}
+
+
+	#step_1-3 .card,
 	#testimonials .card {
 		margin-bottom: -50px !important;
 	}
@@ -741,10 +760,10 @@ object-fit: cover;
 
 
 	.certified-foto img {
-	height: auto;
-	padding: 20px;
-	width: 150px;
-}
+		height: 150px;
+		padding: 20px;
+		width: auto;
+	}
 
 	.text h3 {
 		font-size: 16px;
@@ -767,14 +786,14 @@ object-fit: cover;
 		top: 850px;
 	}
 
-#before-and-after {
+	#before-and-after {
 		height: 1000px;
-			background-position: 200vw;
+		background-position: 200vw;
 
 	}
 
 
-	}
+}
 
 
 @media (max-width:767.98px) {
@@ -840,6 +859,8 @@ object-fit: cover;
 
 	.splash-foto {
 		height: 650px;
+		background-position: 175vw;
+
 	}
 
 	.splash-text {
@@ -858,6 +879,11 @@ object-fit: cover;
 		padding-top: 50px;
 	}
 
+	.certified-foto img {
+		width: auto;
+		height: 175px;
+	}
+
 }
 
 
@@ -871,8 +897,8 @@ object-fit: cover;
 	}
 
 	#havvideo {
-	height: 300px;
-}
+		height: 300px;
+	}
 
 	.emballage {
 		width: 350px;
@@ -892,15 +918,13 @@ object-fit: cover;
 	}
 
 	#historien-bag-lavinde {
-			height: 1200px;
-			background-position: 235vw;
-		}
+		height: 1200px;
+		background-position: 235vw;
+	}
 
 	#before-and-after {
 		height: 1100px;
-			background-position: 275vw;
+		background-position: 275vw;
 
 	}
 }
-
-
