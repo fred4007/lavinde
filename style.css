@@ -340,7 +340,7 @@ html {
 .certified-foto img {
 	height: 230px;
 	padding: 20px;
-	width: auto;
+	width: 230px;
 }
 
 
@@ -762,7 +762,7 @@ h3 {
 	.certified-foto img {
 		height: 150px;
 		padding: 20px;
-		width: auto;
+		width: 150px;
 	}
 
 	.text h3 {
@@ -880,7 +880,7 @@ h3 {
 	}
 
 	.certified-foto img {
-		width: auto;
+		width: 175px;
 		height: 175px;
 	}
 
