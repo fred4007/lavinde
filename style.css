@@ -74,7 +74,7 @@ a {
 #tilmeld-nyhedsbrev h4,
 #carousel .display-4,
 #carousel h4 {
-	text-shadow: 0px 0px 20px rgba(81, 81, 81, 0.91);
+	text-shadow: 0px 1px 17px rgba(51, 51, 51, 0.81);
 	color: white;
 	font-weight: 900;
 }
@@ -85,24 +85,12 @@ a {
 }
 
 
-header img,
-#splash img,
-#ingredienser img,
-#historien-bag-lavinde img,
-#step_1-3 img,
-#bestsellers img,
-#carousel img,
-#3-boxes img,
-#before-and-after img,
-#testimonials img,
-#certified img,
-#video-section img,
-#tilmeld-nyhedsbrev img,
-#insta img,
-footer img {
-	width: 100%;
-	height: auto;
+header img, #splash img, #ingredienser img, #historien-bag-lavinde img, #step_1-3 img, #hav img, #bestsellers img, #carousel img, #3-boxes img, #before-and-after img, #testimonials img, #certified img, #video-section img, #tilmeld-nyhedsbrev img, #insta img, footer img {
+  width: 100%;
+  height: auto;
 }
+
+
 
 /***links***/
 
@@ -160,6 +148,15 @@ footer {
 	width: auto;
 }
 
+.black-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.1);
+}
+
 
 /***knapper***/
 
@@ -200,6 +197,13 @@ a:hover,
 .btn:hover,
 .button:hover {
 	transform: scale(1.2);
+
+}
+
+
+
+#splash .knap:hover {
+	transform: scale(1.2);
 }
 
 /*****menu****/
@@ -212,8 +216,10 @@ header {
 
 nav a {
 	font-weight: 900;
-	font-family: 'Montserrat', sans-serif
+	font-family: 'Montserrat', sans-serif;
+	text-shadow: 0px 0px 3px rgba(51, 51, 51, 0.91);
 }
+
 
 nav img {
 	width: 150px;
@@ -222,15 +228,18 @@ nav img {
 }
 
 .nav-link {
-	color: white !important;
 	font-size: 12px;
+	color: white;
+	font-weight: bold;
 }
 
 .nav-link {
 	margin: 0px 20px;
 }
 
-
+.navbar-collapse {
+	justify-content: flex-end;
+}
 
 
 /**splash header **/
@@ -246,6 +255,7 @@ nav img {
 
 #splash {
 	overflow: hidden;
+
 }
 
 .splash-text {
@@ -254,6 +264,9 @@ nav img {
 	text-shadow: 0px 0px 20px rgba(51, 51, 51, 0.71);
 }
 
+.splash-text p {
+	text-shadow: 0px 0px 5px rgba(51, 51, 51, 0.91);
+}
 #splash {
 	margin: 0px;
 }
@@ -261,6 +274,14 @@ nav img {
 #splash .btn {
 	margin-left: 270px;
 	margin-top: 50px;
+}
+
+.overskrift2 {
+	text-align: right;
+}
+
+.overskrift1 {
+	text-align: left;
 }
 
 /***pil ned på splash***/
@@ -271,9 +292,9 @@ nav img {
 	height: 25px;
 	background-size: 100%;
 	position: absolute;
-	z-index: 1;
+	z-index: 100;
 	top: 855px;
-	left: 47%;
+	left: 45%;
 }
 
 
@@ -453,6 +474,10 @@ html {
 	overflow: hidden;
 }
 
+.emballage h4 {
+	z-index: 100;
+}
+
 /***testimonials***/
 
 #testimonials .card-text {
@@ -528,9 +553,6 @@ iframe {
 	height: 351px;
 }
 
-video::-webkit-media-controls {
-	display: none !important;
-}
 
 
 
@@ -646,22 +668,7 @@ footer img:hover {
 
 /*
 
-**preloader**
 
-.preloader {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background-image: url('videoer/spinner.gif');
-	background-repeat: no-repeat;
-	background-color: #2B2C2E;
-	background-position: center;
-}
-
-*/
 
 
 
@@ -772,13 +779,23 @@ h3 {
 }
 
 
+@media (max-width:991px) {
 
+	#navbarNav {
+		background-color: rgba(226, 215, 198, 0.73);
+		padding: 20px;
+	}
+
+	header a:hover {
+		transform: scale(1);
+	}
+
+}
 
 /*ipad og under*/
 
 @media (max-width:835px) {
 	#splash .btn {
-		margin-left: 20vw;
 		margin-top: 50px;
 	}
 
@@ -798,7 +815,7 @@ h3 {
 
 @media (max-width:767.98px) {
 	.emballage {
-		background-image: url(fotos/Renew.jpg);
+		background-image: url(fotos/renew.jpg);
 		background-size: cover;
 		max-width: 450px;
 		height: auto;
@@ -859,15 +876,13 @@ h3 {
 
 	.splash-foto {
 		height: 650px;
-		background-position: 175vw;
+		background-position: 125vw;
 
 	}
 
 	.splash-text {
-		text-shadow: 0px 0px 20px rgba(51, 51, 51, 0.91);
-		margin: 120px
+		margin-top: 290px;
 	}
-
 
 
 	#splash_arrow {
@@ -892,8 +907,9 @@ h3 {
 
 @media (max-width:600px) {
 
-	#splash .btn {
-		margin-left: 25vw;
+	.splash-foto {
+		background-position: 165vw;
+
 	}
 
 	#havvideo {
@@ -912,7 +928,7 @@ h3 {
 	}
 
 	.splash-text {
-		margin-top: 290px;
+		margin-top: 325px;
 		margin-left: 10vw;
 		margin-right: 10vw;
 	}
@@ -928,3 +944,26 @@ h3 {
 
 	}
 }
+
+/*Alt under iphone 6/7 */
+
+@media (max-width:400px) {
+
+	.nyhedsbrev_foto {
+		height: 500px;
+	}
+
+	#certified img {
+		width: 150px;
+		height: 150px;
+	}
+
+	#video-section h3,
+	#before-and-after h2 {
+		font-size: 20px !important;
+	}
+
+	#historien-bag-lavinde {
+		height: 1300px;
+	}
+	}
