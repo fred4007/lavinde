@@ -899,6 +899,11 @@ h3 {
 		height: 175px;
 	}
 
+		#historien-bag-lavinde {
+		height: 1200px;
+		background-position: 235vw;
+	}
+
 }
 
 
@@ -943,6 +948,7 @@ h3 {
 		background-position: 275vw;
 
 	}
+
 }
 
 /*Alt under iphone 6/7 */
